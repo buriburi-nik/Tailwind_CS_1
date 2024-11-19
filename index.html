@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shoe Card</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add Google Fonts link for Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Optional: Set the font family globally for all text -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
-<body class="flex justify-center items-center py-16">
+<body class="flex justify-center items-center py-16 font-mono">
   <!-- container -->
   <div class="w-[600px] h-auto bg-white border border-gray-200 shadow-lg rounded-none overflow-hidden flex relative">
     <!-- image section -->
@@ -20,7 +28,7 @@
     <div class="flex-grow p-6">
       <!-- top section 1-->
       <div class="p-4 bg-black text-white ">
-        <h2 class="text-xl font-bold mb-1">Retro Shoe</h2>
+        <h2 class="text-2xl font-bold mb-1">Retro Shoe</h2>
         <p class="text-lg text-white mb-1">$89.00 &nbsp;<span class="text-cyan-400">IN STOCK</span></p>
       </div>
 
@@ -33,11 +41,11 @@
         <button class="p-4 border bg-white text-black hover:bg-teal-500">XL</button>
       </div>
 
-      <!-- action buttons -->
+      <!-- action buttons with black 2px border -->
       <div class="flex space-x-4 mt-6">
-        <button class="flex px-5 py-3 bg-teal-500 text-black font-bold hover:bg-teal-600 w-32">BUY NOW</button>
-        <button class="flex px-3 py-3 bg-gray-300 text-black font-bold hover:bg-gray-400">ADD TO BAG</button>
-        <button class="p-2 bg-transparent border-none text-gray-500 hover:text-black">
+        <button class="flex px-5 py-3 bg-teal-500 text-black font-bold hover:bg-teal-600 w-32 border-2 border-black">BUY NOW</button>
+        <button class="flex px-3 py-3 bg-gray-300 text-black font-bold hover:bg-gray-400 border-2 border-black">ADD TO BAG</button>
+        <button class="p-2 bg-transparent text-gray-500 hover:text-black">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </button>
       </div>
